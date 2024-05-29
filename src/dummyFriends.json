@@ -1,0 +1,135 @@
+{
+  "friends": [
+    {
+      "id": 1,
+      "fullName": "Alice Johnson",
+      "avatarSrc": "https://picsum.photos/200/300?random=1",
+      "invitationStatus": "joined",
+      "joinedOn": "10/01/2023"
+    },
+    {
+      "id": 2,
+      "fullName": "Bob Smith",
+      "avatarSrc": "https://picsum.photos/200/300?random=2",
+      "invitationStatus": "pending"
+    },
+    {
+      "id": 3,
+      "fullName": "Carol White",
+      "avatarSrc": "https://picsum.photos/200/300?random=3",
+      "invitationStatus": "joined",
+      "joinedOn": "11/02/2023"
+    },
+    {
+      "id": 4,
+      "fullName": "David Brown",
+      "avatarSrc": "https://picsum.photos/200/300?random=4",
+      "invitationStatus": "pending"
+    },
+    {
+      "id": 5,
+      "fullName": "Eve Davis",
+      "avatarSrc": "https://picsum.photos/200/300?random=5",
+      "invitationStatus": "joined",
+      "joinedOn": "12/03/2023"
+    },
+    {
+      "id": 6,
+      "fullName": "Frank Miller",
+      "avatarSrc": "https://picsum.photos/200/300?random=6",
+      "invitationStatus": "pending"
+    },
+    {
+      "id": 7,
+      "fullName": "Grace Wilson",
+      "avatarSrc": "https://picsum.photos/200/300?random=7",
+      "invitationStatus": "joined",
+      "joinedOn": "01/04/2023"
+    },
+    {
+      "id": 8,
+      "fullName": "Hank Moore",
+      "avatarSrc": "https://picsum.photos/200/300?random=8",
+      "invitationStatus": "pending"
+    },
+    {
+      "id": 9,
+      "fullName": "Ivy Taylor",
+      "avatarSrc": "https://picsum.photos/200/300?random=9",
+      "invitationStatus": "joined",
+      "joinedOn": "02/05/2023"
+    },
+    {
+      "id": 10,
+      "fullName": "Jack Anderson",
+      "avatarSrc": "https://picsum.photos/200/300?random=10",
+      "invitationStatus": "pending"
+    },
+    {
+      "id": 11,
+      "fullName": "Kathy Thomas",
+      "avatarSrc": "https://picsum.photos/200/300?random=11",
+      "invitationStatus": "joined",
+      "joinedOn": "03/06/2023"
+    },
+    {
+      "id": 12,
+      "fullName": "Leo Jackson",
+      "avatarSrc": "https://picsum.photos/200/300?random=12",
+      "invitationStatus": "pending"
+    },
+    {
+      "id": 13,
+      "fullName": "Mia Martin",
+      "avatarSrc": "https://picsum.photos/200/300?random=13",
+      "invitationStatus": "joined",
+      "joinedOn": "04/07/2023"
+    },
+    {
+      "id": 14,
+      "fullName": "Noah Lee",
+      "avatarSrc": "https://picsum.photos/200/300?random=14",
+      "invitationStatus": "pending"
+    },
+    {
+      "id": 15,
+      "fullName": "Olivia Walker",
+      "avatarSrc": "https://picsum.photos/200/300?random=15",
+      "invitationStatus": "joined",
+      "joinedOn": "05/08/2023"
+    },
+    {
+      "id": 16,
+      "fullName": "Paul Hall",
+      "avatarSrc": "https://picsum.photos/200/300?random=16",
+      "invitationStatus": "pending"
+    },
+    {
+      "id": 17,
+      "fullName": "Quinn King",
+      "avatarSrc": "https://picsum.photos/200/300?random=17",
+      "invitationStatus": "joined",
+      "joinedOn": "06/09/2023"
+    },
+    {
+      "id": 18,
+      "fullName": "Rachel Young",
+      "avatarSrc": "https://picsum.photos/200/300?random=18",
+      "invitationStatus": "pending"
+    },
+    {
+      "id": 19,
+      "fullName": "Sam Harris",
+      "avatarSrc": "https://picsum.photos/200/300?random=19",
+      "invitationStatus": "joined",
+      "joinedOn": "07/10/2023"
+    },
+    {
+      "id": 20,
+      "fullName": "Tina Clark",
+      "avatarSrc": "https://picsum.photos/200/300?random=20",
+      "invitationStatus": "pending"
+    }
+  ],
+  "total": 20
+}
