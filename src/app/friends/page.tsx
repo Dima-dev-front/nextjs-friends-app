@@ -20,7 +20,7 @@ const FriendsPage = async () => {
         <div className='text-gray500 mb-[56px] min-[640px]:text-xl md:text-2xl'>
           See who&apos;s in your friends list!
         </div>
-        <FriendsList friends={friends} />
+        <FriendsList friendsFromServer={friends} />
       </div>
     </div>
   );
