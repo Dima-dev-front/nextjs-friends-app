@@ -12,6 +12,10 @@ const config: Config = {
         gray700: '#374151',
         pinkish: '#dc4a85',
         pink600: '#d61f69',
+        nightblue: '#383874',
+        indigo100: '#e5edff',
+        social: '#35518d',
+        darkblue: '#1e1f39',
       },
       keyframes: {
         slideDown: {
