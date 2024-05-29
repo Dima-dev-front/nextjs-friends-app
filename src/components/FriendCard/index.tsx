@@ -1,18 +1,26 @@
 /* eslint-disable @next/next/no-img-element */
 import type { Friend } from '@/types/Friend';
-import type { FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 import { InvitationStatus } from '@/types/InvitationStatus';
 import cn from 'classnames';
 import Link from 'next/link';
 
 type Props = {
   friend: Friend;
-};
+  showEditLink?: boolean;
+} & ComponentProps<'div'>;
 
 export const FriendCard: FC<Props> = ({
   friend: { id, avatarSrc, invitationStatus, fullName, ...friend },
+  showEditLink = true,
+  className = '',
 }) => (
-  <div className='relative flex flex-col rounded-lg bg-white px-[14px] pb-[14px] pt-[18px]'>
+  <div
+    className={cn(
+      'relative flex flex-col rounded-lg bg-white px-[14px] pb-[14px] pt-[18px]',
+      className,
+    )}
+  >
     <img
       src={avatarSrc}
       alt="friend's avatar"
@@ -36,12 +44,14 @@ export const FriendCard: FC<Props> = ({
     >
       {fullName}
     </div>
-    <Link
-      href={`/friends/${id}`}
-      className='bg-darkblue mt-[10px] whitespace-nowrap rounded-lg border-none px-6 py-[14px]
+    {showEditLink && (
+      <Link
+        href={`/friends/${id}`}
+        className='bg-darkblue mt-[10px] whitespace-nowrap rounded-lg border-none px-6 py-[14px]
           text-center font-medium text-white transition-opacity hover:opacity-80'
-    >
-      Edit Info
-    </Link>
+      >
+        Edit Info
+      </Link>
+    )}
   </div>
 );
