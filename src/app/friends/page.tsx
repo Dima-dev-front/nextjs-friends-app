@@ -1,20 +1,14 @@
 import { FriendsHeader } from '@/components/FriendsHeader';
 import { FriendsList } from '@/components/FriendsList';
-import type { Friend } from '@/types/Friend';
 import type { Metadata } from 'next';
-import fs from 'fs/promises';
+import { getFriendsData } from '../services/getFriendsData';
 
 export const metadata: Metadata = {
   title: 'Friends',
 };
 
 const FriendsPage = async () => {
-  const file = await fs.readFile(
-    process.cwd() + '/src/dummyFriends.json',
-    'utf8',
-  );
-  const friendsData = JSON.parse(file);
-  const friends = friendsData.friends as Friend[];
+  const { friends } = await getFriendsData();
 
   return (
     <div

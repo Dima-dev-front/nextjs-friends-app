@@ -46,7 +46,7 @@ export const FriendCard: FC<Props> = ({
     </div>
     {showEditLink && (
       <Link
-        href={`/friends/${id}`}
+        href={`/friends/edit/${id}`}
         className='bg-darkblue mt-[10px] whitespace-nowrap rounded-lg border-none px-6 py-[14px]
           text-center font-medium text-white transition-opacity hover:opacity-80'
       >
