@@ -1,24 +1,34 @@
 'use client';
 
-import type { FC } from 'react';
+import { useEffect, type FC } from 'react';
 import type { Friend } from '@/types/Friend';
 import { FriendCard } from '../FriendCard';
 import { useSearchParams } from 'next/navigation';
+import { useFriendsStore } from '@/stores/friendsStore';
 
 type Props = {
-  friends: Friend[];
+  friendsFromServer: Friend[];
 };
 
-export const FriendsList: FC<Props> = ({ friends }) => {
+export const FriendsList: FC<Props> = ({ friendsFromServer }) => {
   const searchParams = useSearchParams();
+  const { setFriends, friends } = useFriendsStore((state) => state);
 
-  const filteredFriends = friends.filter((friend) => {
-    const searchQuery = searchParams.get('query');
+  const filteredFriends = (friends.length ? friends : friendsFromServer).filter(
+    (friend) => {
+      const searchQuery = searchParams.get('query');
 
-    if (!searchQuery) return true;
+      if (!searchQuery) return true;
 
-    return friend.fullName.toLowerCase().includes(searchQuery.toLowerCase());
-  });
+      return friend.fullName.toLowerCase().includes(searchQuery.toLowerCase());
+    },
+  );
+
+  useEffect(() => {
+    if (!friends.length) {
+      setFriends(friendsFromServer);
+    }
+  }, [friendsFromServer]);
 
   return (
     <ul
