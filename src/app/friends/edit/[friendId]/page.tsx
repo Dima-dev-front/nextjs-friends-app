@@ -1,6 +1,6 @@
 import { BackLink } from '@/components/common/BackLink';
 import { notFound } from 'next/navigation';
-import { getFriendsData } from '@/app/services/getFriendsData';
+import { getFriendsData } from '@/services/getFriendsData';
 import { EditFriendInfo } from '@/components/EditFriendInfo';
 import type { FC } from 'react';
 import type { Metadata } from 'next';
@@ -43,7 +43,7 @@ const PermissionsPage: FC<Props> = async ({ params: { friendId } }) => {
 
   return (
     <div
-      className='bg-gray100 flex min-h-screen flex-1 justify-center px-4 py-8
+      className='flex min-h-screen flex-1 justify-center bg-gray100 px-4 py-8
         md:px-8 md:py-12 lg:px-12 lg:py-16'
     >
       <div className='mx-auto w-full max-w-[1400px]'>
