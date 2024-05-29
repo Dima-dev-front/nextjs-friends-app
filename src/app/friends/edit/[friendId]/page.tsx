@@ -8,6 +8,7 @@ import type { Metadata } from 'next';
 type Props = {
   params: { friendId: string };
 };
+
 export const generateStaticParams = async (): Promise<
   { friendId: string }[]
 > => {
